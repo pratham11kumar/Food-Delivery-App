@@ -13,7 +13,6 @@ It includes restaurant browsing, food details, cart functionality, and full navi
 🧭 Navigation Structure
 📊 Diagram
 Bottom Tab Navigator
-
 │
 ├── Home (Stack Navigator)
 │     ├── Restaurant List Screen
@@ -23,7 +22,6 @@ Bottom Tab Navigator
 │
 ├── Cart Screen
 └── Profile Screen
-
 📌 Navigation Flow Explanation
 Home tab contains a Stack Navigator
 User moves from Restaurant → Food → Cart
