@@ -12,15 +12,14 @@ It includes restaurant browsing, food details, cart functionality, and full navi
 🔀 Stack + Tab Navigation
 
 ## 🧭 Navigation Structure
-📊 Diagram
 
 Bottom Tab Navigator
 │
 ├── Home (Stack Navigator)
-│     ├── Restaurant List Screen
-│     ├── Restaurant Detail Screen
-│     ├── Food Detail Screen
-│     └── Cart Screen (hidden in tab when active)
+│   ├── Restaurant List Screen
+│   ├── Restaurant Detail Screen
+│   ├── Food Detail Screen
+│   └── Cart Screen (hidden in tab)
 │
 ├── Cart Screen
 └── Profile Screen
