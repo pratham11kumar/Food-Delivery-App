@@ -1,4 +1,6 @@
-import { createNativeStackNavigator }
+import {
+createNativeStackNavigator
+}
 from "@react-navigation/native-stack";
 
 import HomeScreen
@@ -17,23 +19,40 @@ export default function RestaurantStack(){
 
 return(
 
-<Stack.Navigator>
+<Stack.Navigator
+
+screenOptions={{
+
+animation:
+
+"slide_from_right",
+
+headerStyle:{
+
+backgroundColor:
+"#FF6B35"
+
+},
+
+headerTintColor:
+"white"
+
+}}
+
+>
 
 <Stack.Screen
 
 name="Home"
 
-component={HomeScreen}
+component={
+HomeScreen
+}
 
 options={{
 
-title:"Restaurants",
-
-headerStyle:{
-backgroundColor:"#FF6B35"
-},
-
-headerTintColor:"white"
+title:
+"Restaurants"
 
 }}
 
@@ -43,39 +62,41 @@ headerTintColor:"white"
 
 name="RestaurantDetail"
 
-component={RestaurantDetail}
+component={
+RestaurantDetail
+}
 
 options={{
 
-title:"Restaurant",
+title:
+"Restaurant",
 
-headerStyle:{
-backgroundColor:"#FF6B35"
-},
-
-headerTintColor:"white"
+animation:
+"fade"
 
 }}
 
- />
+/>
 
 <Stack.Screen
 
 name="Cart"
 
-component={CartScreen}
+component={
+CartScreen
+}
 
 options={{
 
-headerStyle:{
-backgroundColor:"#FF6B35"
-},
+title:
+"Cart",
 
-headerTintColor:"white"
+animation:
+"slide_from_bottom"
 
 }}
 
- />
+/>
 
 </Stack.Navigator>
 

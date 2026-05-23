@@ -23,17 +23,28 @@ navigation
 ){
 
 const {
-name,
-price
+
+name="Restaurant",
+
+price=0,
+
+id
+
 }
+
 =
-route.params;
+
+route.params || {};
 
 const {
+
 cart,
 setCart
+
 }
+
 =
+
 useContext(
 CartContext
 );
@@ -45,8 +56,10 @@ setCart([
 ...cart,
 
 {
+
 name,
 price
+
 }
 
 ])
@@ -91,6 +104,22 @@ style={{
 
 fontSize:20,
 
+marginTop:10
+
+}}
+
+>
+
+₹{price}
+
+</Text>
+
+<Text
+
+style={{
+
+fontSize:18,
+
 marginTop:10,
 
 marginBottom:20
@@ -99,7 +128,9 @@ marginBottom:20
 
 >
 
-₹{price}
+Restaurant ID:
+
+{id}
 
 </Text>
 
